@@ -15,16 +15,16 @@ import org.openqa.selenium.WebElement;
 
 import com.qa.fb.keyword.base.TestBase;
 
-public class KeyWordEngine {
+public class KeyWordEngine extends TestBase {
 	public WebDriver driver;
 	public Properties prop;
 	public TestBase base;
-
 	public WebElement element;
+	
 	public static Workbook book;
 	public static Sheet sheet;
 	
-	public final String SCENARIOS_SHEET_PATH = "C:\\Users\\Admin\\OneDrive\\Desktop\\KeywordDriver.xlsx";
+	public final String SCENARIOS_SHEET_PATH = "E:\\Automation\\KeyWordDriven\\src\\main\\java\\com\\qa\\fb\\keyword\\scenarios\\KeywordDriver.xlsx";
 
 	public void startExecution(String sheetName) {
 
@@ -86,13 +86,15 @@ public class KeyWordEngine {
 						element.clear();
 						element.sendKeys(value);
 					} else if (action.equalsIgnoreCase("click")) {
-						element.click();
+						//element.click();
+						element.sendKeys(value);
 					} else if (action.equalsIgnoreCase("isDisplayed")) {
 						element.isDisplayed();
 					} else if (action.equalsIgnoreCase("getText")) {
 						String elementText = element.getText();
 						System.out.println("text from element : " + elementText);
 					}
+					
 					locatorType = null;
 					break;
 
@@ -109,6 +111,7 @@ public class KeyWordEngine {
 						String elementText = element.getText();
 						System.out.println("text from element : " + elementText);
 					}
+					
 					locatorType = null;
 					break;
 					
@@ -125,6 +128,7 @@ public class KeyWordEngine {
 						String elementText = element.getText();
 						System.out.println("text from element : " + elementText);
 					}
+					
 					locatorType = null;
 					break;
 
@@ -141,6 +145,7 @@ public class KeyWordEngine {
 						String elementText = element.getText();
 						System.out.println("text from element : " + elementText);
 					}
+					
 					locatorType = null;
 					break;
 
@@ -159,6 +164,7 @@ public class KeyWordEngine {
 						String elementText = element.getText();
 						System.out.println("text from element : " + elementText);
 					}
+					
 					locatorType = null;
 					break;
 
@@ -175,6 +181,7 @@ public class KeyWordEngine {
 					break;
 
 				default:
+					
 					break;
 				}
 

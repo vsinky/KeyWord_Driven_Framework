@@ -2,20 +2,30 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-13T01:12:32Z" name="Default suite" finished-at="2022-08-13T01:13:30Z" duration-ms="58190">
+  <suite started-at="2022-08-23T19:50:48 IST" name="Suite" finished-at="2022-08-23T19:52:48 IST" duration-ms="120430">
     <groups>
     </groups>
-    <test started-at="2022-08-13T01:12:32Z" name="Default test" finished-at="2022-08-13T01:13:30Z" duration-ms="58190">
+    <test started-at="2022-08-23T19:50:48 IST" name="Test" finished-at="2022-08-23T19:52:48 IST" duration-ms="120430">
       <class name="com.qa.fb.keyword.tests.LoginTest">
-        <test-method signature="loginTest()[pri:0, instance:com.qa.fb.keyword.tests.LoginTest@282cb7c7]" started-at="2022-08-13T01:12:32Z" name="loginTest" finished-at="2022-08-13T01:12:33Z" duration-ms="821" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.fb.keyword.tests.LoginTest@63f259c3]" started-at="2022-08-23T19:50:48 IST" name="setUp" finished-at="2022-08-23T19:50:48 IST" duration-ms="86" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest()[pri:0, instance:com.qa.fb.keyword.tests.LoginTest@63f259c3]" started-at="2022-08-23T19:50:48 IST" name="loginTest" finished-at="2022-08-23T19:52:09 IST" duration-ms="80830" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method signature="signUpTest()[pri:0, instance:com.qa.fb.keyword.tests.LoginTest@282cb7c7]" started-at="2022-08-13T01:12:33Z" name="signUpTest" finished-at="2022-08-13T01:13:30Z" duration-ms="57343" status="PASS">
+      </class> <!-- com.qa.fb.keyword.tests.LoginTest -->
+      <class name="com.qa.fb.keyword.tests.SignUpTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.fb.keyword.tests.SignUpTest@332796d3]" started-at="2022-08-23T19:52:09 IST" name="setUp" finished-at="2022-08-23T19:52:09 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="signUpTest()[pri:0, instance:com.qa.fb.keyword.tests.SignUpTest@332796d3]" started-at="2022-08-23T19:52:10 IST" name="signUpTest" finished-at="2022-08-23T19:52:48 IST" duration-ms="38721" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUpTest -->
-      </class> <!-- com.qa.fb.keyword.tests.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.qa.fb.keyword.tests.SignUpTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
